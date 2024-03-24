@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page - Faculty</title>
+    
+    <style>
+        /* Your styles for homef.hbs */
+        body {
+            background-color: #f0f0f0;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        main {
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        /* Container for the student overview table */
+        .student-overview {
+            margin-top: 20px;
+        }
+
+        /* Styles for the student overview table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+        /* Styles for student profile links */
+        a {
+            color: #3498db;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Faculty Home Page</h1>
+    </header>
+
+    <main>
+        <!-- Student Overview Table -->
+        <div class="student-overview">
+            <h2>Student Overview</h2>
+            <table>
+                <!-- Add your table header and content here -->
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Name</th>
+                        <th>Watched Videos</th>
+                        <th>Duration</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Add your table rows dynamically based on data -->
+                    <tr>
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>Video 1, Video 2</td>
+                        <td>30 minutes</td>
+                        <td><a href="/faculty/student-profile/1">View Profile</a></td>
+                    </tr>
+                                        <tr>
+                        <td>2</td>
+                        <td>Jack Nicholson</td>
+                        <td>Video 1</td>
+                        <td>2hr 30minutes</td>
+                        <td><a href="/faculty/student-profile/1">View Profile</a></td>
+                    </tr>
+                                        <tr>
+                        <td>3</td>
+                        <td>Simon</td>
+                        <td>Video 7, Video 8</td>
+                        <td>30 minutes</td>
+                        <td><a href="/faculty/student-profile/1">View Profile</a></td>
+                    </tr>
+                                        <tr>
+                        <td>4</td>
+                        <td>Tom</td>
+                        <td>Video 1, Video 8</td>
+                        <td>20 minutes</td>
+                        <td><a href="/faculty/student-profile/1">View Profile</a></td>
+                    </tr>
+                                        <tr>
+                        <td>5</td>
+                        <td>Megan</td>
+                        <td>Video 4, Video 2</td>
+                        <td>50 minutes</td>
+                        <td><a href="/faculty/student-profile/1">View Profile</a></td>
+                    </tr>
+                                        <tr>
+                        <td>6</td>
+                        <td>Cameron</td>
+                        <td>Video 5</td>
+                        <td>15 minutes</td>
+                        <td><a href="/faculty/student-profile/1">View Profile</a></td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Student Profile Section -->
+        <div class="student-profile">
+            <!-- This section will be dynamically populated based on the selected student -->
+            <!-- It can include information such as learning progress, report analytics, attendance, etc. -->
+        </div>
+    </main>
+
+    <footer>
+        <!-- Footer content goes here -->
+        <p>&copy; 2023 Faculty Portal</p>
+    </footer>
+</body>
+</html>
+
